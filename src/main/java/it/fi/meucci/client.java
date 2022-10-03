@@ -5,7 +5,7 @@ import java.net.*;
 
 public class client{
     String nomeServer= "localhost";
-    int portaServer=6789;
+    int portaServer=6788;
     Socket mioSocket;
     BufferedReader tastiera;
     String stringautente;
@@ -24,11 +24,11 @@ public class client{
         indalServer =new BufferedReader(new InputStreamReader(mioSocket.getInputStream()));
         }
         catch(UnknownHostException e){
-            System.err.println("cazo");
+            System.err.println("no host");
         }
      
         catch(Exception e){
-            System.out.println("penen");
+            System.out.println("no so");
         }
         return mioSocket;
     }
